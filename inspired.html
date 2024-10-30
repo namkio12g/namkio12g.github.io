@@ -1,0 +1,238 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Inspired - youtube clone</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Projects</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="generic.html">Inspired - Youtube-Clone</a></li>
+								<li><a href="elements.html">Shoe web v 2.0</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Inspired - youtube clone</h2>
+								<p>Inspired by YouTube, this project is a full-featured video-sharing platform designed to deliver a similar user experience. It enables users to browse, watch, and upload videos seamlessly</p>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major">Key components</h3>
+									<h4> Authentication & Security</h4>
+									<ul>
+										<li>
+											<strong>Google OAuth2 and JWT</strong>: Used Google OAuth2 for secure user login, along with JWT tokens for
+											session management and access control, ensuring secure, token would be stored in cookies
+										</li>
+									</ul>
+									<h4>Microservices Architecture </h4>
+									<ul>
+										<li>
+											<strong>Microservices with RabbitMQ</strong>: Split core functions (video processing, authentication, and
+											data management) into distinct services, coordinated with RabbitMQ for efficient task distribution and communication.
+										</li>
+										<li>
+											<strong> Video service (Port 2020)</strong>:is responsible for creating and editing videos, transferring
+											video files to the upload service for processing and uploading to the cloud. It retrieves videos from database through an
+											API to push them to the front end using infinite scroll.
+										</li>
+										<li>
+											<strong> Channel service (Port 2021)</strong>: manages all channel-related data and functionality, including
+											user authentication and channel data organization.
+										</li>
+										<li>
+											<strong> Upload service (Port 2024)</strong>:Provided functionalities for processing video files and
+											thumbnails and uploading them to the cloud. It performs tasks such as transcoding videos into multiple
+											resolutions, creating thumbnails, and efficiently managing cloud uploads.
+										</li>
+										<li>
+											<strong> Interation service (Port 2023)</strong>:Manages user interactions, specifically comments on videos.
+											It allows users to add, update, delete, and retrieve comments, supporting smooth real-time engagement on the
+											platform.
+										</li>
+									</ul>
+									<h4>Video Processing & Storage </h4>
+									<ul>
+										<li>
+											<strong>FFmpeg for Video Resolutions Used</strong>: FFmpeg to create multiple video
+											resolutions and thumbnails, optimizing
+											playback across different devices and network conditions.
+											
+										</li>
+										<li>
+											<strong>AWS S3 Integration</strong>: Leveraged AWS S3 for reliable, scalable cloud storage of video files,
+											allowing
+											high-speed
+											content delivery and cost-effective storage solutions.
+										</li>
+									</ul>
+									<h4>Frontend User Experience </h4>
+									<ul>
+										<li>
+											<strong>React with Responsive UI</strong>: Developed an intuitive front end with React.js, SCSS, and
+											Bootstrap, creating responsive and user-friendly interfaces for video interaction
+
+										</li>
+										
+									</ul>
+									<h3 class="major">Techonologies used</h3>
+									<ul>
+										<li>
+											<strong>Front-End</strong>: HTML, Scss, Javascript (ReactJS), Bootstrap 5
+										<li>
+											<strong>Back-End</strong>: Node.js (Express), RabbitMQ, FFmpeg, Google OAuth2
+										</li>
+										<li>
+											<strong>Database</strong>: MongoDB, Cloud service (AWS service)
+										</li>
+										<li>
+											<strong>Unit test</strong>: PostMan
+										</li>
+
+									</ul>
+									<h2 class="major">Demo</h2>
+									<section class="features">
+										<article>
+											<a href="https://youtube-clone-asw.s3.ap-southeast-2.amazonaws.com/HomePage.png" class="image"><img
+													src="https://youtube-clone-asw.s3.ap-southeast-2.amazonaws.com/HomePage.png"
+													alt="" /></a>
+											<h3 class="major">Home Page</h3>
+											<p>Utilized infinite scroll to dynamically load and update the video list as the user scrolls down</p>
+											<a href="https://youtube-clone-asw.s3.ap-southeast-2.amazonaws.com/HomePage.png" class="special">Watch full</a>
+										</article>
+										<article>
+											<a href="https://youtube-clone-asw.s3.ap-southeast-2.amazonaws.com/VideoPage.png" class="image"><img
+													src="https://youtube-clone-asw.s3.ap-southeast-2.amazonaws.com/VideoPage.png" alt="" /></a>
+											<h3 class="major">Video Page</h3>
+											<p>Where users can play a specific video, leave comments, subscribe to the channel, like, and save the video.
+												The interface also features a curated list of recommended videos on the side</p>
+											<a href="https://youtube-clone-asw.s3.ap-southeast-2.amazonaws.com/VideoPage.png" class="special">Watch
+												full</a>
+										</article>
+										<article>
+											<a href="#" class="image"><img
+													src="https://youtube-clone-asw.s3.ap-southeast-2.amazonaws.com/ChannelPage.png" alt="" /></a>
+											<h3 class="major">Channel Page</h3>
+											<p>Display detailed channel information along with a related list of recommended videos from the channel</p>
+											<a href="https://youtube-clone-asw.s3.ap-southeast-2.amazonaws.com/ChannelPage.png" class="special">Watch
+												full</a>
+										</article>
+										<article>
+											<a href="https://youtube-clone-asw.s3.ap-southeast-2.amazonaws.com/VideoHistory.png" class="image"><img
+													src="https://youtube-clone-asw.s3.ap-southeast-2.amazonaws.com/VideoHistory.png" alt="" /></a>
+											<h3 class="major">History</h3>
+											<p>Where users can track and revisit videos they've previously watched</p>
+											<a href="https://youtube-clone-asw.s3.ap-southeast-2.amazonaws.com/VideoHistory.png" class="special">Watch
+												full</a>
+										</article>
+										<article>
+											<a href="https://youtube-clone-asw.s3.ap-southeast-2.amazonaws.com/VideoManager.png" class="image"><img
+													src="https://youtube-clone-asw.s3.ap-southeast-2.amazonaws.com/VideoMagager.png" alt="" /></a>
+											<h3 class="major">Video Manager Page</h3>
+											<p>Provides a centralized dashboard for users to manage their video content. Users can view, edit, and delete their uploaded videos</p>
+											<a href="https://youtube-clone-asw.s3.ap-southeast-2.amazonaws.com/VideoHistory.png" class="special">Watch
+												full</a>
+										</article>
+										<article>
+											<a href="https://youtube-clone-asw.s3.ap-southeast-2.amazonaws.com/VideosLiked.png" class="image"><img
+													src="https://youtube-clone-asw.s3.ap-southeast-2.amazonaws.com/VideosLiked.png" alt="" /></a>
+											<h3 class="major">Videos Liked Page and Videos Saved Page(same UI)</h3>
+											<p>Displays all videos a user has liked or saved. Using infinite scroll, the page dynamically loads additional liked
+												videos as the user scrolls,</p>
+											<a href="https://youtube-clone-asw.s3.ap-southeast-2.amazonaws.com/VideosLiked.png" class="special">Watch
+												full</a>
+										</article>
+											<article>
+												<a href="https://youtube-clone-asw.s3.ap-southeast-2.amazonaws.com/VideoUpload.png" class="image"><img
+														src="https://youtube-clone-asw.s3.ap-southeast-2.amazonaws.com/VideoUpload.png" alt="" /></a>
+												<h3 class="major">Upload section</h3>
+												<p>Where users can drag or upload their video</p>
+												<a href="https://youtube-clone-asw.s3.ap-southeast-2.amazonaws.com/VideoUpload.png" class="special">Watch
+													full</a>
+											</article>
+										
+									</section>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Get in touch</h2>
+							<p>For further details, feel free to reach out through the links below:</p>
+							<!-- <form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="4"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form> -->
+							<ul class="contact">
+					
+								<li class="icon solid fa-phone">0355-776-715</li>
+								<li class="icon brands fa-github"><a href="https://github.com/namkio12g/Youtube-Clone-Biggest-project">The project's github</a></li>
+								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

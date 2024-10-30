@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Shoe website v2.0</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Projects</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="generic.html">Inspired - Youtube-Clone</a></li>
+								<li><a href="elements.html">Shoe web v 2.0</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Shoe website v 2.0</h2>
+								<p>This web application is a comprehensive solution for storing and managing products, orders, and other data for a shoe store, built using an MVC (Model-View-Controller) architecture. It serves as a substantial upgrade to both the backend and frontend of the original website, enhancing its functionality, performance, and user experience</p>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+									<h3 class="major">Key components</h3>
+									<ul>
+										<li>
+											<strong>Authentication using Jwt</strong>: I implemented JWT to generate tokens containing staff login information, with an expiration time set for each token. This approach ensures that even if a staff member closes the tab, the token remains valid for a specified period, allowing them to resume their session without needing to log in again within that timeframe.
+										</li>
+										<li>
+											<strong>Authorization</strong>: I initially planned to use AuthorizeApi for role-based permission checks on each API route. However, I opted for view filtering instead to hide functionalities entirely from unauthorized roles, enhancing security by concealing restricted features.
+										</li>
+										<li>
+											<strong>Data Management(for staff)</strong>: With the appropriate permission ,User can create ,delete ,update and query the data from database
+										</li>
+										<li>
+											<strong>Customer experience</strong>:
+											In my app, customers can easily view and filter products by type, brand, and size; add items to their cart to
+											create orders; and check details as well as track the status of their past and current orders.
+										</li>
+									</ul>
+									<h3 class="major">Techonologies used</h3>
+									<ul>
+										<li>
+											<strong>Front-End</strong>: Boostrap, HTML, CSS, Pug, Javascript.
+										<li>
+											<strong>Back-End</strong>: Nodejs (framework express), Restful Api
+										</li>
+										<li>
+											<strong>Database</strong>: MongoDB
+										</li>
+										
+									</ul>
+									<h2 class="major">Demo</h2>
+									<section class="features">
+										<article>
+											<a href="images/home.png" class="image"><img
+													src="images/home.png"
+													alt="" /></a>
+											<h3 class="major">Home Page</h3>
+											<p></p>
+										</article>
+										<article>
+											<a href="images/cart.png" class="image"><img
+													src="images/cart.png" alt="" /></a>
+											<h3 class="major">Cart</h3>
+											<p></p>
+									
+										</article>
+										<article>
+											<a href="images/order.png" class="image"><img
+													src="images/order.png" alt="" /></a>
+											<h3 class="major">Order infomation</h3>
+										
+										</article>
+										<article>
+											<a href="images/ordersAdmin.png" class="image"><img
+													src="images/ordersAdmin.png" alt="" /></a>
+											<h3 class="major">Order Manager</h3>
+										
+										</article>
+										<article>
+											<a href="images/permision.png" class="image"><img
+													src="images/permision.png" alt="" /></a>
+											<h3 class="major">decentralization page </h3>
+										
+										</article>
+										<article>
+											<a href="images/productsAdmin.png" class="image"><img
+													src="images/productsAdmin.png" alt="" /></a>
+											<h3 class="major">Product Manager</h3>
+										
+										</article>
+											<article>
+												<a href="images/productDetail.jpg" class="image"><img
+														src="images/productDetail.jpg" alt="" /></a>
+												<h3 class="major">Product detail page</h3>
+										
+											</article>
+										
+									</section>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Get in touch</h2>
+							<p>For further details, feel free to reach out through the links below:</p>
+							<!-- <form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="4"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form> -->
+							<ul class="contact">
+					
+								<li class="icon solid fa-phone">0355-776-715</li>
+								<li class="icon brands fa-github"><a href="https://github.com/namkio12g/ShoeWeb2.0-Nodejs">The project's github</a></li>
+								<li class="icon brands fa-solid fa-d"><a
+										href="https://shoe-web2-0-nodejs-q6jqljg2x-namkio12gs-projects.vercel.app/">Link demo</a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
